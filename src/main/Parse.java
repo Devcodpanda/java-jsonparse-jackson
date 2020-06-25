@@ -14,7 +14,7 @@ public class Parse {
             // write your code here !
 
             // TODO : get the root from the file JSON_WEATHER_PATH
-            JsonNode root = objectMapper.readTree(new File("weather.json"));
+            JsonNode root = objectMapper.readTree(new File(JSON_WEATHER_PATH));
 
             // TODO : get the value of "name" attribute
             String cityName = root.get("name").asText();
